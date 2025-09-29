@@ -37,8 +37,6 @@ Upload the main script file to `/root/scripts/`
 chmod +x /root/scripts/backup_on_change.sh
 ```
 
-Ed
-
 ### Step 3: Configure the Scan Interval and backup location
 
 Edit  the configuration part in top of the script.
