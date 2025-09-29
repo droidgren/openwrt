@@ -29,7 +29,7 @@ mkdir -p /mnt/sda1/bkps
 
 Upload the main script file to `/root/scripts/`
 
-[https://github.com/droidgren/openwrt/blob/main/scripts/backup_on_change.sh](https://github.com/droidgren/openwrt/raw/refs/heads/main/scripts/backup_on_change.sh)
+[https://github.com/droidgren/openwrt/blob/main/scripts/autobackup/backup_on_change.sh](https://github.com/droidgren/openwrt/blob/main/scripts/autobackup/backup_on_change.sh)
 
 **Set permissions:**
 
@@ -54,7 +54,7 @@ INTERVAL=600 # The time interval in seconds which the script will look for confi
 Create the service file at `/etc/init.d/backup_on_change` to enable the script to start automatically on boot and be stopped/restarted gracefully.
 With the following contents:
 
-https://github.com/droidgren/openwrt/blob/main/scripts/backup_on_change
+[https://github.com/droidgren/openwrt/blob/main/scripts/backup_on_change](https://github.com/droidgren/openwrt/blob/main/scripts/autobackup/backup_on_change)
 
 ## ▶️ Starting and Managing the Service
 
