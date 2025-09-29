@@ -1,0 +1,30 @@
+#!/bin/sh /etc/rc.common
+
+START=99
+STOP=1
+PROG=/root/scripts/backup_on_change.sh
+PIDFILE=/var/run/backup_on_change.pid
+
+# The 'start-stop-daemon' tool is used for robust service management.
+# It automatically runs the command in the background, creates the PID file, 
+# and provides a reliable way to stop it later.
+
+start() {
+    echo "Starting backup on change service..."
+    # -S: start
+    # -b: background
+    # -x: execute the program
+    # -p: use this PID file
+    start-stop-daemon -S -b -x $PROG -p $PIDFILE
+}
+
+stop() {
+    echo "Stopping backup on change service..."
+    # -K: stop (kill)
+    # -q: quiet (suppress common errors)
+    # -p: use this PID file to find the process
+    # -s 9: use signal 9 (KILL) for guaranteed termination
+    start-stop-daemon -K -q -p $PIDFILE -s 9
+}
+
+# The 'restart' function is provided by /etc/rc.common when using start() and stop()
