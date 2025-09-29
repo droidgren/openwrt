@@ -52,6 +52,7 @@ INTERVAL=600 # The time interval in seconds which the script will look for confi
 ### Step 4: Create the `init.d` Service File
 
 Create the service file at `/etc/init.d/backup_on_change` to enable the script to start automatically on boot and be stopped/restarted gracefully.
+With the following contents:
 
 https://github.com/droidgren/openwrt/blob/main/scripts/backup_on_change
 
