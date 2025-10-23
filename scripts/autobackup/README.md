@@ -67,6 +67,7 @@ chmod +x /etc/init.d/backup_on_change
 Enable the service to start on boot and then start it immediately:
 
 ```bash
+sed -i 's/\r//' /etc/init.d/backup_on_change
 /etc/init.d/backup_on_change enable
 /etc/init.d/backup_on_change start
 ```
