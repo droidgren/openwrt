@@ -7,7 +7,7 @@ This script, `backup_on_change.sh`, automatically creates a complete OpenWrt con
 ## Prerequisites
 
 1.  **Mounted External Storage:** You must have a USB drive or other persistent storage mounted to your OpenWrt router (e.g., at `/mnt/sda1`).
-      Check the guide there https://openwrt.org/docs/guide-user/storage/usb-drives-quickstart
+      Check the guide there [https://openwrt.org/docs/guide-user/storage/usb-drives-quickstart](https://openwrt.org/docs/guide-user/storage/usb-drives)
 
 -----
 
