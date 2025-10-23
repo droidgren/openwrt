@@ -54,6 +54,12 @@ With the following contents:
 
 [backup_on_change](https://github.com/droidgren/openwrt/blob/main/scripts/autobackup/backup_on_change)
 
+**Set permissions:**
+
+```bash
+chmod +x /etc/init.d/backup_on_change
+```
+
 ## ▶️ Starting and Managing the Service
 
 ### Start the Service
